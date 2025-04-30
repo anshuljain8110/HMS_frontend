@@ -32,7 +32,7 @@ function DoctorReview() {
       useEffect(() => {
         const getNurses = async () => {
           await axios
-            .get("http://localhost:4451/nurse/get-allNurses")
+            .get("https://hms-backend-toag.onrender.com/nurse/get-allNurses")
             .then((response) => {
               
               setNurses(response.data);
@@ -53,7 +53,7 @@ function DoctorReview() {
       const handleAddMessage = (e) =>{
         e.preventDefault();
         console.log(nurses)
-        axios.post("http://localhost:4451/doctor/add-message",{email , message ,from})
+        axios.post("https://hms-backend-toag.onrender.com/doctor/add-message",{email , message ,from})
         .then(() =>{
           Swal.fire({
             icon: "success",

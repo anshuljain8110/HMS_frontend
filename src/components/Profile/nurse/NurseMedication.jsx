@@ -27,7 +27,7 @@ function NurseMedication() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:4451/user/get-users");
+        const response = await axios.get("https://hms-backend-toag.onrender.com/user/get-users");
         setPatients(response.data);
         
       } catch (error) {
@@ -42,7 +42,7 @@ function NurseMedication() {
 
   const handleAddMedication = async(e) =>{
     e.preventDefault() ;
-    await axios.post(`http://localhost:4451/user/add-medications`,{name ,  frequency , dosage, email:changePatient})
+    await axios.post(`https://hms-backend-toag.onrender.com/user/add-medications`,{name ,  frequency , dosage, email:changePatient})
     .then((res) =>{
       Swal.fire({
         title: "Success",
