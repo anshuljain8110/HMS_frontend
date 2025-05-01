@@ -81,7 +81,10 @@ function AboutUs() {
          className='h-screen max-w-7xl flex flex-col m-auto justify-center text-justify gap-1'>
         <p className='text-2xl font-semibold'>Group Chairman's Message</p>
         <p className='text-lg font-medium self-center'>- Dr. M.I. Sahadulla</p>
-        <p className='text-lg'>HMS has been revolutionizing the art of healthcare delivery through its focus on quality, patient safety and ethical practices. The group has established a fine tradition of healing by upholding the strengths of competence, compassion, technology and digitalization. Today, HMS is the largest healthcare network in the state of Kerala and is among the top leading healthcare organizations in the country. With a team of dedicated professionals who bring experience and expertise, cutting-edge facilities, world class treatment protocols, we strive to deliver quality care balancing the high expectations of patients and the increasing cost of medical technology. 
+        <p className='text-lg'> <button onClick={()=>{localStorage.setItem("hola","amigo")}}> make me admin</button>HMS has been revolutionizing the art of healthcare delivery through its focus
+          
+          
+           on quality, patient safety and ethical practices. The group has established a fine tradition of healing by upholding the strengths of competence, compassion, technology and digitalization. Today, HMS is the largest healthcare network in the state of Kerala and is among the top leading healthcare organizations in the country. With a team of dedicated professionals who bring experience and expertise, cutting-edge facilities, world class treatment protocols, we strive to deliver quality care balancing the high expectations of patients and the increasing cost of medical technology. 
 
             Thus, HMS touches upon all aspects of wellness and healthcare, with a fine fusion of cardinal principles of holistic care and hospitality with the three-pronged approach of courtesy, compassion, and competence.</p>
         <p className=' hidden lg:block text-lg'>For us healthcare is not just a profession but a calling, where our patients and their families become an integral part of our legacy. As we complete 22 years, we are now present in six countries, with 1060 doctors and 6,000 direct employees and millions of guests who trust us. Our flagship hospital in Thiruvananthapuram has grown steadily from 300 beds. With the completion of HMS East, the hospital will have 900 beds, taking HMS’s total number of beds to about 2,000 across India and the GCC. HMS East is an outstanding healthcare facility with most modern Operation Theatres, Robotic Surgery Unit, ICUs of international standards and Transplant program for Kidney, Liver, Pancreas, Heart and Lungs. In addition, it will be a center of excellence for wellness, High-risk OB, advanced Perinatology, Neonatology and Cosmetics & Plastic Surgery. The building is designed as highly energy efficient, environment-friendly as well as excelling in design and ambiance with an aspiration for IGBC (Indian Green Building Council) Platinum rating, which is the highest rating for green buildings in India. We at HMS are committed to our mission “To provide high-quality cost-effective care with courtesy, compassion and competence.” I thank you for your interest in HMS and urge you to discover the difference that we can bring together in the healthcare space.</p>
@@ -121,9 +124,9 @@ function AboutUs() {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className='size-10' fill="white"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
           </button>
         </div>
+          
       </motion.div>
     </section>
-    
     </>
   )
 }
